@@ -5,6 +5,7 @@ import com.mn.springboot.person_service_api_mysql.utiliities.Constants;
 import com.mn.springboot.person_service_api_mysql.entity.Person;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,8 +18,21 @@ public class PersonService {
     @Autowired
     PersonRepository personRepository;
 
-    public Person savePerson(Person person){
+    public Person createPerson(Person person){
         return personRepository.save(person);
+    }
+
+    public Person savePerson(Long id, Person person){
+
+        return getPersonById(id)
+                .map(p -> {
+                    p.setId(id);
+                    p.setFirstName(person.getFirstName());
+                    p.setLastName(person.getLastName());
+                    return personRepository.save(p);
+                })
+                .orElse(new Person());
+
     }
 
     public List<Person> getAllPersons(){
