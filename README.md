@@ -8,7 +8,7 @@ Simple project that demonstrates REST APIs, connection to MySQL database and doc
 - **Spring Data JPA** for easy database interaction
 - **MySQL** running on Docker
 - **REST Endpoints** that can be tested
-- - **Swagger UI** that can be used to test
+- **Swagger UI** that can be used to test
 
 ---
 
@@ -19,8 +19,8 @@ Simple project that demonstrates REST APIs, connection to MySQL database and doc
 - **MySQL 8.0** (via Docker)
 - **Maven** (build tool)
 - **Swagger** (for testing; optional)
-- - **Lombok** (avoid boiler plate code)
-- - **MySQL Connector j** (official JDBC driver for MySQL)
+- **Lombok** (avoid boiler plate code)
+- **MySQL Connector j** (official JDBC driver for MySQL)
 
 ---
 
