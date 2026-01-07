@@ -31,6 +31,7 @@ Simple project that demonstrates REST APIs, connection to MySQL database and doc
 - **Docker** (if you want to run MySQL in a container)
 - **Git** (for cloning this repository)
 
+
 ## Overview
 This demo application implements a RESTful API for managing Person records. We handle basic CRUD (Create, Read, Update, Delete) operations through endpoints exposed at http://localhost:8080/api/v1/persons. This project uses a basic Person table and uses Spring Data JPA APIs to interact with MySQL database docker image running locally.
 
@@ -65,3 +66,9 @@ springdoc.swagger-ui.enabled=true
 # Optional: Customize the paths (defaults are shown)
 springdoc.swagger-ui.path=/swagger-ui.html
 springdoc.api-docs.path=/v3/api-docs
+
+
+## Next Steps
+Dockerize.
+Add child database tables and implement Liquibase.
+Spring Security.
