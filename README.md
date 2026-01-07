@@ -52,6 +52,9 @@ Run MySQL in Docker (Optional) If you don’t have MySQL installed locally, spin
     -p 3306:3306 \
     mysql:8.0
 
+ mvn spring-boot:run
+ localhost:8080/api/v1/persons
+ 
 spring.datasource.url=jdbc:mysql://localhost:3306/mySQLDockerLocaldb
 spring.datasource.username=root
 # It is recommended to use environment variables for sensitive data.
