@@ -15,7 +15,7 @@ Simple project that demonstrates REST APIs, connection to MySQL database and doc
 ## Technologies Used
 
 - **Java 17** (or compatible version)
-- **Spring Boot 4.0.1 (Web, Data JPA)
+- **Spring Boot 4.0.1** (Web, Data JPA)
 - **MySQL 8.0** (via Docker)
 - **Maven** (build tool)
 - **Swagger** (for testing; optional)
@@ -32,7 +32,7 @@ Simple project that demonstrates REST APIs, connection to MySQL database and doc
 - **Git** (for cloning this repository)
 
 ## Next Steps
-- **Dockerize**
+- **Dockerize** Done
 - **Add Child Tables**
 - **Liquibase**
 - **Spring Security**
