@@ -1,5 +1,5 @@
 # person-service-api-mysql
-Simple project that demonstrates REST APIs, connection to MySQL database and dockerize 
+Simple project that demonstrates REST APIs, connection to MySQL database and dockerize. Project can be started using docker-compose.
 
 
 ## Features
@@ -47,7 +47,7 @@ Run MySQL in Docker (Optional) If you don’t have MySQL installed locally, spin
    ```bash
    docker run -d \
     --name mySQLDockerLocaldb \
-    -e MYSQL_ROOT_PASSWORD=secret \
+    -e MYSQL_ROOT_PASSWORD=Version8_0 \
     -e MYSQL_DATABASE=mydatabase \
     -p 3306:3306 \
     mysql:8.0
